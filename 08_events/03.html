@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    const sayDate = (str) => {
+        console.log(str, Date.now());
+    }
+    sayDate(Date.now);
+    const intervalId = setInterval(sayDate, 1000, "hi");
+
+    clearInterval(intervalId);
+
+    console.group('User Details');
+    console.log('Name: John Doe');
+    console.log('Age: 30');
+    console.group('Address');
+    console.log('Street: 123 Main St');
+    console.log('City: Springfield');
+    console.groupEnd(); // Ends 'Address' group
+    console.groupEnd(); // Ends 'User Details' group
+    console.log('%c Custom Log', 'color: blue; font-size: 20px;');
+
+
+
+</script>
+
+</html>
