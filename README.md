@@ -10,7 +10,6 @@
 #
 # JavaScript Loops
 
-No problem! Here are the JavaScript loops explained in bullet points:
 
 - **JS for Loop**
   - Used when you know the number of iterations.
